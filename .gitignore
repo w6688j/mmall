@@ -35,3 +35,5 @@ Thumbs.db
 
 /src/main/webapp/node_modules/
 /src/main/webapp/dist/
+node_modules/
+dist/
