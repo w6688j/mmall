@@ -43,3 +43,7 @@ npm install webpack-dev-server@1.6.5
   },
 
 npm run dev_win
+
+渲染html模板
+
+npm install hogan.js --save-dev

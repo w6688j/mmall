@@ -1,5 +1,5 @@
 'use strict';
-var Hogan = require('hogan');
+var Hogan = require('hogan.js');
 var conf = {
     serverHost: ''
 };
@@ -80,4 +80,5 @@ var _mm = {
     }
 };
 
+console.log('_mm');
 module.exports = _mm;
