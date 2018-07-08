@@ -34,3 +34,9 @@ target/
 Thumbs.db
 
 /src/main/webapp/node_modules/
+/src/main/webapp/dist/
+src/main/java/com/mmall/vo/
+src/main/webapp/dist/
+src/main/webapp/src/service/
+src/main/webapp/src/util/
+src/test/
