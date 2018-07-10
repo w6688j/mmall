@@ -1,27 +1,23 @@
 'use strict';
 require('./index.css');
-require('../module.js');
-console.log('hello index');
-var _mm = require('util/mm.js');
+require('page/common/nav/index.js');
+require('page/common/header/index.js');
+require('util/slider/index.js');
+var navSide         = require('page/common/nav-side/index.js');
+var templateBanner  = require('./banner.string');
+var _mm             = require('util/mm.js');
 
-_mm.request({
-    method: 'POST',
-    url: 'http://medicine.w6688j.com/user/check_valid.do',
-    data: {
-        'str': 'admin',
-        'type': 'username'
-    },
-    success: function (res) {
-        console.log(res);
-    },
-    error: function (res) {
-        console.log(res);
-    }
+$(function() {
+    // 渲染banner的html
+    var bannerHtml  = _mm.renderHtml(templateBanner);
+    $('.banner-con').html(bannerHtml);
+    // 初始化banner
+    var $slider     = $('.banner').unslider({
+        dots: true
+    });
+    // 前一张和后一张操作的事件绑定
+    $('.banner-con .banner-arrow').click(function(){
+        var forward = $(this).hasClass('prev') ? 'prev' : 'next';
+        $slider.data('unslider')[forward]();
+    });
 });
-
-var html = '<div>{{data}}</div>';
-var data = {
-    data: 'test'
-};
-
-console.log(_mm.renderHtml(html, data));

@@ -47,3 +47,7 @@ npm run dev_win
 渲染html模板
 
 npm install hogan.js --save-dev
+
+安装字体
+
+npm install font-awesome --save

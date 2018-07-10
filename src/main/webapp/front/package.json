@@ -24,5 +24,7 @@
     "webpack": "^1.15.0",
     "webpack-dev-server": "^1.6.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
 }
