@@ -4,7 +4,6 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 // 环境变量配置，dev / online
 var WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
 console.log(WEBPACK_ENV);
-
 // 获取html-webpack-plugin参数的方法
 var getHtmlConfig = function (name, title) {
     return {
@@ -17,6 +16,10 @@ var getHtmlConfig = function (name, title) {
     };
 };
 
+var publicPath = '/dist/';
+if ('dev' === WEBPACK_ENV) {
+    publicPath = '//medicine.w6688j.com/dist/';
+}
 // webpack config
 var config = {
     entry: {
@@ -27,7 +30,7 @@ var config = {
     },
     output: {
         path: __dirname + '/dist/',
-        publicPath: 'dev' === WEBPACK_ENV ? '/dist/' : '//medicine.w6688j.com/dist/',
+        publicPath: publicPath,
         filename: 'js/[name].js'
     },
     externals: {
