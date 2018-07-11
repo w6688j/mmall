@@ -17,7 +17,7 @@ var getHtmlConfig = function (name, title) {
 };
 
 var publicPath = '/dist/';
-if ('dev' === WEBPACK_ENV) {
+if ('online' === WEBPACK_ENV) {
     publicPath = '//medicine.w6688j.com/dist/';
 }
 // webpack config
