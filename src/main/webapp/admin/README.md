@@ -35,11 +35,11 @@ yarn add sass-loader@6.0.6 --dev
 图片处理插件
 yarn add file-loader@1.1.6 url-loader@0.6.2 --dev
 
-字体库插件
-yarn add font-awesome
-
 安装webpack-dev-server
 yarn add webpack-dev-server@2.9.7 --dev
+
+安装react-router
+yarn add react-router-dom@4.2.2
 
 ```
 
