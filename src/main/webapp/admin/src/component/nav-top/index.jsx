@@ -1,11 +1,6 @@
 import React from 'react';
 
-import NavTop from 'component/nav-top/index.jsx';
-import NavSide from 'component/nav-side/index.jsx';
-
-import './theme.css';
-
-class Layout extends React.Component {
+class NavTop extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -14,12 +9,10 @@ class Layout extends React.Component {
         return (
             <div id="wrapper">
                 test layout
-                <NavTop/>
-                <NavSide/>
                 {this.props.children}
             </div>
         );
     };
 }
 
-export default Layout;
+export default NavTop;
