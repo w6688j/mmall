@@ -52,9 +52,9 @@ yarn add rc-pagination@1.15.1
 package中添加
 "scripts": {
     "dev": "node_modules/.bin/webpack-dev-server",
-    "dev_win": "set WEBPACK_ENV=dev && node_modules/.bin/webpack-dev-server",
+    "dev_win": "set WEBPACK_ENV=dev&& node_modules/.bin/webpack-dev-server",
     "dist": "WEBPACK_ENV=online node_modules/.bin/webpack -p",
-    "dist_win": "set WEBPACK_ENV=online && node_modules/.bin/webpack -p"
+    "dist_win": "set WEBPACK_ENV=online&& node_modules/.bin/webpack -p"
 }
 
 yarn run dev_win
