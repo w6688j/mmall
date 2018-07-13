@@ -41,6 +41,9 @@ yarn add webpack-dev-server@2.9.7 --dev
 安装react-router
 yarn add react-router-dom@4.2.2
 
+安装分页插件
+yarn add rc-pagination@1.15.1
+
 ```
 
 ## 开发模式运行:
